@@ -41,7 +41,7 @@ file using Java IO package.
 1. create a FunctionTest.java
 2. @SpringBootTest
 3. readContact() checks if the file exist
-4. 
+4. saveContact() checks if the inputs can be saved upon submit
 
 ### Commands
 1.  mvn spring-boot:run -Dspring-boot.run.arguments="--dataDir=/Users/Username/folder" <---- for MAC OS
