@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.MultiValueMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -27,9 +29,23 @@ public class ContactController {
         c.setEmail(form.getFirst("email"));
         c.setPhone(form.getFirst("phone"));
 
-        System.out.printf("Contact %s", c);
+        System.out.printf("Contact%s", c);
 
         dbSvc.save(c);
+
+        model.addAttribute("contact", c);
+
+        return "showcontact";
+    }
+
+    @GetMapping(value = "/{id}", produces = "text/html")
+    public String getContact(@PathVariable("id") String id, Model model) {
+
+        Contact c = new Contact();
+        c = dbSvc.read(id);
+      
+        System.out.println(" Retrieving information based on ID");
+        System.out.printf("ID: %s", c);
 
         model.addAttribute("contact", c);
 

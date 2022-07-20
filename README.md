@@ -34,6 +34,16 @@ file using Java IO package.
 1. Differences between static page and using templates
 2. Using a static page AddContact.html to add input and display on showcontact.html
 
+### Extracting the input
+1. GET contact by reading variable id
+
+### Test Cases
+1. create a FunctionTest.java
+2. @SpringBootTest
+3. readContact() checks if the file exist
+4. 
+
 ### Commands
 1.  mvn spring-boot:run -Dspring-boot.run.arguments="--dataDir=/Users/Username/folder" <---- for MAC OS
 2.  mvn spring-boot:run -Dspring-boot.run.arguments="--dataDir=c:/data" <----- for Windows
+3.  mvn clean test

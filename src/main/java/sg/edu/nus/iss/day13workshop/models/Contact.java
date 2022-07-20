@@ -9,7 +9,7 @@ public class Contact {
     private String phone;
 
     public Contact() {
-        this.id = UUID.randomUUID().toString().substring(0, 8);
+        this.id = UUID.randomUUID().toString().substring(0, 4); // endIndex defines the number of digits
     }
 
     public Contact(String id) {
@@ -46,7 +46,8 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "Contact [email=" + email + "id=" + id + "name=" + name + "phone=" + phone + "]";
+        return " [email= " + email + " id=" + id + " name=" + name + " phone=" + phone + "]";
+        
     }
 
 }
