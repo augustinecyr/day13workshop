@@ -16,10 +16,17 @@ file using Java IO package.
 2. spring.thymeleaf.suffix: .html
 3. spring.thymeleaf.cache:  false
 
-### creating a service
+### Creating a service
 1. add DatabaseService to services folder
 2. add annotation @Service 
 
-### creating a model
+### Creating a model
 1. Contact.java
 2. add getter setter for all the variables
+
+### Creating a view
+1. AddContact.html with POST form method
+
+### Commands
+1.  mvn spring-boot:run -Dspring-boot.run.arguments="--dataDir=/Users/Username/data" <---- for MAC OS
+2.  mvn spring-boot:run -Dspring-boot.run.arguments="--dataDir=c:/data" <----- for Windows

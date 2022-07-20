@@ -2,16 +2,14 @@ package sg.edu.nus.iss.day13workshop.models;
 
 import java.util.UUID;
 
-
-
 public class Contact {
-    private final String id; 
+    private final String id;
     private String name;
     private String email;
-    private  String phone;
-    
+    private String phone;
+
     public Contact() {
-        this.id = UUID.randomUUID().toString().substring(0,8);
+        this.id = UUID.randomUUID().toString().substring(0, 8);
     }
 
     public Contact(String id) {
@@ -47,7 +45,7 @@ public class Contact {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Contact [email=" + email + "id=" + id + "name=" + name + "phone=" + phone + "]";
     }
 
