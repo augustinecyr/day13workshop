@@ -27,6 +27,13 @@ file using Java IO package.
 ### Creating a view
 1. AddContact.html with POST form method
 
+### Creating a controller for Contact
+1. ContactController.java
+
+### Displaying the input
+1. Differences between static page and using templates
+2. Using a static page AddContact.html to add input and display on showcontact.html
+
 ### Commands
-1.  mvn spring-boot:run -Dspring-boot.run.arguments="--dataDir=/Users/Username/data" <---- for MAC OS
+1.  mvn spring-boot:run -Dspring-boot.run.arguments="--dataDir=/Users/Username/folder" <---- for MAC OS
 2.  mvn spring-boot:run -Dspring-boot.run.arguments="--dataDir=c:/data" <----- for Windows
