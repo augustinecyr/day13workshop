@@ -16,4 +16,10 @@ file using Java IO package.
 2. spring.thymeleaf.suffix: .html
 3. spring.thymeleaf.cache:  false
 
+### creating a service
+1. add DatabaseService to services folder
+2. add annotation @Service 
 
+### creating a model
+1. Contact.java
+2. add getter setter for all the variables
